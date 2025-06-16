@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome link -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" > 
+<!-- google fonts link -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<!-- bootstrap link -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- css link -->
+    <link href="./css/test.css" rel = "stylesheet">
+    <title>Document</title>
+</head>
+<body class="">
+<h1 class="d-flex justify-content-center m-auto  position-relative">Bookmarker</h1>
+    <div class="w-75 m-auto my-5 myform py-3">
+            <h2 class=" d-flex justify-content-center mt-3"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites  <i class="fa-solid fa-bookmark"></i></h2>
+        <label for="sitename" class="mb-2" ><i class="fa-solid fa-bookmark"></i> Site Name</label>
+        <input type="text" class="form-control mb-3 bg-body bg-opacity-75" id="sitename" placeholder="Bookmark Name" required>
+        <label for="siteurl" class="mb-2"><i class="fa-solid fa-link"></i> Site URL</label>
+        <input type="text" class="form-control mb-3 bg-body bg-opacity-75" id="siteurl" placeholder="Website URL" required>
+       
+        <button class="btn check d-block m-auto my-5" onclick="Create()">Submit</button>
+    </div>
+    
+    
+    <div class="w-75 mx-auto mt-3 ">
+        <table class="table bg-body bg-opacity-75 ">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+                
+            </thead>
+            <tbody id="tableContent">
+
+            </tbody>
+        </table>
+
+    </div>
+    <!-- sweetalert link CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./test2.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
